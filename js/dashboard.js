@@ -1,5 +1,5 @@
 /* 2DO: Dropdown einfügen zum Auswählen der vier Werte*/
-var tileData = ["Tile1", "Tile2", "Tile3"];
+var tileData = ["Tile1", "Tile2", "Tile3", "Tile4"];
 
 var grid = d3.select("body")
   .append("div")
@@ -17,9 +17,6 @@ var tiles = grid
 var content = tiles
   .append("div")
   .attr("class", "tileContent");
-
-
-// Get the data
 
 var margin = {top: 20, right: 20, bottom: 30, left: 150},
     width = 500 - margin.left - margin.right,
@@ -238,6 +235,7 @@ svg.append("text")
 
 drawEx(data);
 drawBIP(bipdata);
+loadMap();
 
 };
 
